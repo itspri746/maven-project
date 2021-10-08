@@ -10,6 +10,7 @@ stages
     stage('code build')
     { steps { withMaven(jdk: 'java_home', maven: 'maven_home') {
         sh 'mvn clean package'
+        
 } } }
     
 }
